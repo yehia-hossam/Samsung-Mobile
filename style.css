@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  width: 80%;
+margin: auto;
+
+}
+
+.logo{
+    width: 120px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li a:hover{
+    color: #800303; 
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+    color: #fff;
+ 
+}
+.content .text h2{
+    font-size: 40px;
+     text-transform: uppercase;
+     
+}
+.content .text h2 span{
+text-transform: capitalize;
+
+}
+ 
+.content .text p{
+    font-size: 15px;
+    margin: 20px 0;
+    
+
+}
+
+
+.content .text a:hover{
+    background: #837e7e;
+    color: #fff;
+}
+.content .image {
+    width: 30%;
+}
+.content .image img{
+    width: 300px;
+margin-top:  50px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translatex(-50%);
+
+
+}
+.icons img{
+    width: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+ 
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+
+}
+.image h2{
+    color: #800303;
+    font-size: 20px;
+ 
+}
+.image h3{
+    color: #fff;
+    font-size: 30px;
+
+}
+.image del{
+    color: #727272;
+}
+
+
+button {
+    --color: #595555;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 25px;
+    font-weight: 500px;
+    color: #000;
+    text-transform:capitalize;
+    background: #fff;
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #000;
+    transition: background 0s;
+  }
+  
